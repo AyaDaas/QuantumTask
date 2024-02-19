@@ -5,7 +5,6 @@ import { Dialog } from '@headlessui/react';
 export default function PostCard({ users, posts, comments }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedPostComments, setSelectedPostComments] = useState([]);
-    const [selectedPostId, setSelectedPostId] = useState(null);
 
     const userMap = new Map(users.map(user => [user.id, user]));
     const commentMap = new Map();
